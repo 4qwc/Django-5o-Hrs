@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myweb Electronic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  <div class="jumbotron text-center">
+  <h1>ยินดีต้อนรับเว็ปไซต์ของฉัน </h1>
+  <p> 
+    <a href="{%  url 'home-page' %}">หน้าแรก</a> |
+    <a href="{% url 'about-page' %}">เกี่ยวกับเรา</a> |
+    <a href="{% url 'contact-page' %}">ติดต่อเรา</a> |
+  </p> 
+</div>
+
+
+<div class="container">
+
+    <h2>เพิ่มสินค้าในระบบ</h2>
+      <p>คุณสามารถเพิ่มสินค้าเข้าระบบได้ (admin)</p>
+      <form method="POST">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="name">ชื่อสินค้า:</label>
+          <input type="text" class="form-control" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+          <label for="price">ราคา:</label>
+          <input type="text" class="form-control" id="price" name="price">
+        </div>
+
+        
+
+        <div class="form-group">
+            <label for="detail">รายละเอียด</label>
+            <textarea class="form-control" rows="5" id="detail" name="detail"></textarea>
+       </div>
+
+
+       <div class="form-group">
+          <label for="image_url">URL รูปสินค้า:</label>
+          <input type="text" class="form-control" id="image_url" name="image_url">
+        </div>
+
+
+         <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+</div> 

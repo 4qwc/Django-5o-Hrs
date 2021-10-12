@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myweb Electronic</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>ยินดีต้อนรับเว็ปไซต์ของฉัน </h1>
+  <p> 
+    <a href="{%  url 'home-page' %}">หน้าแรก</a> |
+    <a href="{% url 'about-page' %}">เกี่ยวกับเรา</a> |
+    <a href="{% url 'contact-page' %}">ติดต่อเรา</a> |
+  </p> 
+</div>
+  
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+    	<img src="https://image.makewebeasy.net/makeweb/0/u8mVxmGkK/Home%2FSlide03.png?v=202012190947" width="200"><br>
+      <a href="{% url 'detail-page' %}"><h3>{{ product1 }}</h3></a> 
+      <p>อุปกรณ์อิเล็กทรอนิกส์เบื้องต้น<br></p>
+  	  	แอมมิเตอร์ (Ammeter)<br>
+  		ตัวเก็บประจุ (Capacitor or Condenser)</p>
+    </div>
+    <div class="col-sm-4">
+    	<img src="https://www.baanjomyut.com/library_3/extension-5/image/07.jpg" width="150"><br>
+      <h3>{{ product2 }}</h3>
+      <p>เป็นเครื่องมือวัดที่มีประโยชน์มาก เพียงแต่ปรับหมุนสวิตซ์ก็สามารถตั้งเป็นโวลต์มิเตอร์ แอมมิเตอร์ หรือโอห์มมิเตอร์ แต่ละแบบสามารถเลือกพิสัยการวัดได้หลายระยะและเลือกไฟฟ้ากระแสสลับ (AC) ไฟฟ้ากระแสตรง (DC) บางชนิดมีคุณสมบัติการวัดเพิ่มเติม เช่น วัดค่าความจุ วัดความถี่ และทดสอบทรานซิสเตอร์ เป็นต้น...</p>
+    </div>
+    <div class="col-sm-4">
+    	<img src="https://sites.google.com/site/kanokwansilly/_/rsrc/1348732543674/bth-thi2-xilekthrxniks-beuxng-tn/2-1/%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%95%E0%B9%89%E0%B8%B2%E0%B8%99.jpg?height=233&width=326" width="100"><br>
+      <h3>{{ product3 }}</h3>        
+      <p>เป็นอุปกรณ์ทำหน้าที่ตานการไหลของกระแสไฟฟ้าโดยใช้ได้ทั้งไฟฟ้ากระแสตรงและไฟฟ้ากระแสสลับ  ถ้าความต้านทานมากกระแสไฟฟ้าจะไหลผ่านตัวต้านทานได้น้อย ถ้าความต้านทานน้อยกระแสไฟฟ้าจะไหลผ่านตัวต้านทานได้มาก...</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
